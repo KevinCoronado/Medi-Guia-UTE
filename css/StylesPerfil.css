@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;
+text-align: center;
+  }
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color:white;
+    background-color: #ca6420;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(255, 84, 11);
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    
+}
+
+.MiPerfil{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    height: 500PX;
+    justify-content: CENTER;
+    align-items: CENTER;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 250px;
+    margin-right: 250px;
+    
+    background-color: rgb(187, 208, 231);
+    padding: 370px ;
+    border-radius: 10px;
+
+}
+
+.grupo{
+    position:relative;
+    margin:45px;
+    font-size: 1.9em;
+
+}
+
+
+
+input{
+    background:none;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    padding: 10px 10px 10px 5px;
+    width:100%; 
+    border: none;
+    border-bottom: 1px solid #000000;
+    color: #000000;
+}
+
+a{
+    display: row;
+    color:#e76a17;
+    text-decoration: none;
+}
+
+header{
+    background-color : #205375;
+    position: fixed;
+        width: 100%;
+}
+
+.container{
+    max-width: 1750px;
+    margin: 0 auto;
+}
+
+header .logo{
+    width: 250px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+header a{
+    padding: 5px 15px;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    color : rgb(244, 242, 228)
+
+}
+
+header a:hover{
+    color: #fc5b1bcd;
+
+}
+
+nav li{
+    list-style: none;
+}
+
+nav >li{
+    padding-bottom:25px ;
+    padding-top:10px;
+    float: left;
+}
+
+nav  ul{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    text-align: left;
+    margin-left:10px;
+}
+
+nav li:hover >ul{
+display:block;
+background-color : #153b55;
+
+}
+
+nav ul >li{
+    padding: 10px;
+    text-align: center;
+}
+

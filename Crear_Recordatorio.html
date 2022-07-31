@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style_Li_Form.css">
+    <title>Crear Recordatorio Medicamento</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="css/Imagenes/Medi guia logo.png" alt="MediGuiaLogo" class="logo">
+            <nav>
+                <li><a href="">Recordatorios</a>
+                    <ul>
+                        <li><a href="./Crear_Recordatorio.html">Crear recordatorio medicinal</a></li>
+                        <li><a href="./Crear_Recordatorio_Medicion.html">Crear recordatorio de medicion</a></li>
+                        <li><a href="./Crear_Recordatorio_Cita.html">Crear recordatorio de cita medica</a></li>
+                        <li><a href="./Ver_Recordatorios.php">Ver recordatorios creados</a></li>
+                    </ul>
+                </li>
+
+                <a href="./ListaCheck.html">Reportes diarios</a>
+                <a href="./calendario.html">Agenda</a>
+
+                <li><a href="">Contactos Medicos</a>
+                 <ul>
+                    <li><a href="./Crear_Contacto.html">Crear contacto</a></li>
+                    <li><a href="./RegistrosContacto.php">Ver contacto creado</a></li>
+                </ul>
+            </li>
+
+                <a href="./Perfil.php">Mi perfil</a>
+            </nav> 
+        </div>
+    </header>
+    <br>
+    <section id="Formulario">
+        <h1>Crear Recordatorio de Medicamento</h1>
+    <div class="container"> 
+         
+    <form class="Options" action="./Crear_Recordatorio.php" method="POST">
+        <strong><label for="Nombre_Medicamento" font-size="1.25em" margin-bottom="10px">Nombre del Medicamento: </label></strong>
+        <br>    
+        <input type="text" name="Nombre_Medicamento" Style="width:200px;margin-bottom:20px;
+        height:30px;">
+
+        <strong><p>Unidad:</p></strong> 
+        <select name="Unidad" id="Unidad" style="width:150px;height:30px;margin-bottom :20px;">
+           <option value="Ampolla">Ampolla</option> 
+           <option value="Cucharada">Cucharada</option>
+           <option value="Capsula">Capsula</option>
+           <option value="Gota">Gota</option>
+           <option value="Gramos">Gramos</option>
+           <option value="Inhalacion">Inhalacion</option>
+           <option value="Inyeccion">Inyeccion</option>
+           <option value="Mililitros">Mililitros</option>
+           <option value="Miligramos">Miligramos</option>
+           <option value="Parche">Parche</option>
+           <option value="Pastilla">Pastilla</option>
+           <option value="Sobre">Sobre</option>
+           <option value="Supositorio">Supositorio</option>
+        </select>
+
+        <strong><p>Cantidad:</p></strong> 
+        <input type="text" name="Cantidad" id="Cantidad">
+
+        <strong><p>Frecuencia:</p></strong> 
+        <label for="FechaInicio_Medicamento">Fecha de inicio:</label>
+        <input type="datetime-local" id="FechaInicio_Medicamento" name="FechaInicio_Medicamento">
+        <br>
+        <br>
+
+        <label for="FechaFin_Medicamento">Fecha de finalizacion:</label>
+        <input type="datetime-local" id="FechaFin_Medicamento" name="FechaFin_Medicamento">
+
+        <strong><p>Cada cuantas horas</p></strong>
+        <select name="HorasMedicamento" id="HorasMedicamento" style="width:150px;height:30px;margin-bottom :20px;">
+            <option value="1 hora">1 hora</option> 
+            <option value="2 horas">2 horas</option>
+            <option value="3 horas">3 horas</option>
+            <option value="4 horas">4 horas</option>
+            <option value="5 horas">5 horas</option>
+            <option value="6 horas">6 horas</option>
+            <option value="7 horas">7 horas</option>
+            <option value="8 horas">8 horas</option>
+            <option value="9 horas">9 horas</option>
+            <option value="10 horas">10 horas</option>
+            <option value="11 horas">11 horas</option>
+            <option value="12 horas">12 horas</option>
+            <option value="24 horas">24 horas</option>
+         </select>
+
+         <div class="container">
+            <Button type="submit">Crear !</Button>
+        </div>
+
+    </form>
+    <div class="imgContain"></div>
+    </div>
+</section>
+
+    
+    
+</body>
+</html>

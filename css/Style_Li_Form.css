@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3.5em;
+    text-align: center;
+    margin-top:70px;
+}
+h2{font-size: 2.7em;
+text-align: center;
+  }
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color:white;
+    background-color: #ca6420;
+    margin-top  : 20px;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: rgb(255, 84, 11);
+}
+
+.container button{
+    position: absolute;
+    right: 10%;
+    bottom: 2%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    
+}
+
+a{
+    display: row;
+    color:#e76a17;
+    text-decoration: none;
+}
+
+header{
+    background-color : #205375;
+    position: fixed;
+        width: 100%;
+}
+
+.container{
+    max-width: 1750px;
+    margin: 0 auto; 
+}
+
+header .logo{
+    width: 250px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+header nav{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+header a{
+    padding: 2px 2px;
+    margin-left: 30px;
+    margin-right:30px;
+    text-decoration: none;
+    font-weight: bold;
+    color : rgb(244, 242, 228);
+    padding-top:10px;
+
+}
+
+header a:hover{
+    color: #fc5b1bcd;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav >li{
+    padding-bottom:25px ;
+    padding-top:10px;
+    float: left;
+}
+
+nav  ul{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    text-align: left;
+    margin-left:10px;
+}
+
+nav li:hover >ul{
+display:block;
+background-color : #153b55;
+
+}
+
+nav ul >li{
+    padding: 0px 0px 8px 0px;
+    margin:0px;
+    text-align: center;
+
+}
+
+#Formulario .container {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+#Formulario .options {
+        width: 50%;
+        text-align: initial; 
+        max-width: 600px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        font-size: 25px;
+        margin-bottom: 300px;
+}
+
+#Formulario .imgContain{
+    background-image: url(Imagenes/Bottles_medicine.webp);
+        background-size:cover; 
+        background-position: center center;
+        width: 600px;
+        height: 600px;
+        margin-top: 0px;
+        margin-bottom: 70px;
+        margin-left: 200px;
+
+}
+
+#Formulario .imgContainCita{
+    background-image: url(Imagenes/CitaMedica.jpg);
+        background-size:cover; 
+        background-position: center center;
+        width: 600px;
+        height: 600px;
+        margin-top: 0px;
+        margin-bottom: 70px;
+        margin-left: 200px;
+
+}
+
+#Formulario .imgContainMedicion{
+    background-image: url(Imagenes/MedicionMedica.webp);
+        background-size:cover; 
+        background-position: center center;
+        width: 600px;
+        height: 600px;
+        margin-top: 0px;
+        margin-bottom: 70px;
+        margin-left: 200px;
+
+}
+
+.Options label{
+    font-size:1.25em;
+}
+.Options option{
+    font-size:1.25em;
+}
+
+.Options input{
+    height:30px;
+    font-size:1.25em;
+}
+
+table, th, td{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:10px
+}
+
+table th{
+    color: #fd8535;
+    background-color:#184462;
+     
+}
+
+table{
+    width:70%;
+    font-size:1.25em;
+    margin-left: 15%;
+    
+    
+}
+
+.Nosotros{
+    width:90%;
+    justify-items: center;
+    font-size:1.40em;
+    margin-left: 60px;
+}
+
+.columna1{
+    padding: 10px; 
+    float: left; 
+    width: 45%; 
+    text-align: center;
+    background-color:#e76a17;
+    margin-left:70px;
+    margin-right:7px;
+    margin-bottom:100px;
+    font-size:1.30em;
+}
+
+.columna2{
+    padding: 10px; 
+    float: left; 
+    width: 45%; 
+    text-align: center;
+    margin-right:70px;
+    margin-left:7;
+    background-color:#e76a17;
+    font-size:1.30em;
+}

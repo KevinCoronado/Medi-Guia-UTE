@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión Medi-Guia</title>
+    <link rel="stylesheet" href="css/StylesPerfilUsuario.css ">
+    <link rel="stylesheet" href="css/Style_Li_Form.css">
+</head>
+  <body>
+    <header>
+        <div class="container">
+            <img src="css/Imagenes/Medi guia logo.png" alt="MediGuiaLogo" class="logo">
+            
+        </div>
+    </header>
+	<br>
+
+    <div class = "Iniciar Sesión">
+        <form   action="./Login.php" method="POST">
+        <div class = "form-register">
+                
+            <h2>Iniciar Sesión</h2>
+            <br>
+            <div class = "InputsContainer">
+                <div >
+                    <h3 style="color: rgb(15, 13, 63)"><label for="correo">Correo</label></h3>
+                <input type = "email" name = "correo" id="correo" placeholder = "Email" style="color: rgb(33, 31, 31)">
+                </div>
+
+                <div >
+                    <h3 style="color: rgb(15, 13, 63)"><label for="contraseña">Contraseña</label></h3>
+                <input type = "password" name = "contraseña" id="contraseña" placeholder = "Contraseña" style="color: rgb(33, 31, 31)">
+                </div>
+
+                <button type="submit">Ingresar</button>
+            </div>
+            
+        </div>
+    </form>
+    </div>
+
+
+
+  </body>   
+</html>
